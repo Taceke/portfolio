@@ -1,0 +1,17 @@
+{
+    "name": "hp/tajer_portfolio_larger_image",
+    "autoload": {
+        "psr-4": {
+            "Hp\\TajerPortfolioLargerImage\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Taceke",
+            "email": "tajerkemer46031@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.10"
+    }
+}

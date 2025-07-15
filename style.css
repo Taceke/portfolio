@@ -1,0 +1,338 @@
+/* Font Upgrade */
+body {
+	font-family: "Segoe UI", sans-serif;
+	background-color: #ffffff;
+	color: #111827;
+	transition: background-color 0.3s, color 0.3s;
+  }
+
+
+
+  
+  * Dark Theme Styles */
+body.dark-mode {
+  background-color: #111827;
+  color: #f8f9fa;
+}
+
+.dark-mode .custom-navbar {
+  background: linear-gradient(to right, #000, #111);
+}
+
+.dark-mode .hero-section {
+  background: linear-gradient(120deg, #0a0a0a, #1a1a1a, #2c2c2c);
+  color: white;
+}
+
+.dark-mode .skill-card,
+.dark-mode .project-card,
+.dark-mode footer,
+.dark-mode .card {
+  background-color: #1f2937 !important;
+  color: #f1f5f9 !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-custom-link,
+.dark-mode h2,
+.dark-mode .btn {
+  color: #ffc107 !important;
+}
+
+.dark-mode .btn-outline-primary,
+.dark-mode .btn-outline-secondary {
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.dark-mode .btn-outline-primary:hover,
+.dark-mode .btn-outline-secondary:hover {
+  background-color: #ffc107;
+  color: #1f2937;
+}
+
+.dark-mode .form-control {
+  background-color: #1f2937;
+  color: #f8f9fa;
+  border-color: #444;
+}
+
+.dark-mode .form-control::placeholder {
+  color: #ccc;
+}
+  
+/* Hero Section Style */
+.hero-section {
+	background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+	padding: 100px 0;
+	min-height: 100vh;
+	color: white;
+  }
+  
+  /* Profile Image Enhancements */
+  .profile-img {
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 20px;
+	border: 4px solid #ffc107;
+	transition: transform 0.3s ease;
+  }
+  
+  .profile-img:hover {
+	transform: scale(1.05);
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+	from { opacity: 0; transform: translateY(20px); }
+	to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .animate-fade-in {
+	animation: fadeIn 1s ease forwards;
+	opacity: 0;
+  }
+  
+  .delay-1 { animation-delay: 0.2s; }
+  .delay-2 { animation-delay: 0.4s; }
+/* Font & Text Settings */
+body {
+	font-family: 'Poppins', 'Segoe UI', sans-serif;
+	color: #f8f9fa;
+	font-size: 16px;
+}
+
+/* Section Headings */
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+	color: #ffc107;
+}
+
+/* Skills + Projects Combined Section */
+.skills-projects-section {
+	background: linear-gradient(to right, #0f172a, #1e293b);
+	padding: 80px 0;
+}
+
+/* Ensure side-by-side layout on desktop */
+.skills-projects-section .row {
+	flex-direction: row;
+}
+
+.skills-projects-section .col-lg-6 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* Skill Cards */
+.skill-card {
+	border-radius: 16px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	transform: translateY(0);
+	cursor: default;
+}
+
+.skill-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card i {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.skill-card h6 {
+	margin: 0;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Skill Colors */
+.bg-html { background-color: #e34c26; }
+.bg-css { background-color: #264de4; }
+.bg-js { background-color: #f0db4f; color: #000 !important; }
+.bg-php { background-color: #4F5D95; }
+.bg-react { background-color: #61dafb; color: #000 !important; }
+.bg-node { background-color: #3c873a; }
+.bg-next { background-color: #000000; }
+.bg-django { background-color: #092e20; }
+.bg-db { background-color: #00758f; }
+.bg-git { background-color: #f1502f; }
+
+/* Projects Cards */
+.project-card {
+	background: #1c1f26;
+	border-radius: 16px;
+	padding: 25px;
+	transition: all 0.3s ease;
+	color: #f8f9fa;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+.project-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 12px 30px rgba(255, 193, 7, 0.15);
+}
+
+.project-card .card-title {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #ffffff;
+	margin-bottom: 10px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.project-card .card-text {
+	font-size: 0.95rem;
+	color: #d1d5db;
+	line-height: 1.6;
+	font-family: 'Poppins', sans-serif;
+}
+
+.project-card .btn {
+	font-size: 0.85rem;
+	padding: 6px 14px;
+	border-radius: 6px;
+	transition: all 0.2s ease-in-out;
+}
+
+.project-card .btn-outline-primary {
+	color: #ffc107;
+	border-color: #ffc107;
+}
+
+.project-card .btn-outline-primary:hover {
+	background-color: #ffc107;
+	color: #1e1e2f;
+}
+
+.project-card .btn-outline-secondary {
+	color: #adb5bd;
+	border-color: #adb5bd;
+}
+
+.project-card .btn-outline-secondary:hover {
+	background-color: #adb5bd;
+	color: #1e1e2f;
+}
+
+  
+  
+ /* CONTACT SECTION */
+.contact-section {
+	background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+	color: #fff;
+  }
+  
+  .contact-form {
+	background-color: rgba(255, 255, 255, 0.05);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+	background: #1e2a38;
+	border: 1px solid #495057;
+	color: #fff;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+	color: #adb5bd;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+	background: #1e2a38;
+	color: #fff;
+	border-color: #ffc107;
+	box-shadow: none;
+  }
+  
+  /* MODERN FOOTER */
+  .custom-footer {
+	background: #111827;
+	color: #e5e7eb;
+	border-top: 1px solid #2c2f36;
+  }
+  
+  .custom-footer .icon-link {
+	color: #f8f9fa;
+	transition: all 0.3s ease;
+	font-size: 1.25rem;
+  }
+  
+  .custom-footer .icon-link:hover {
+	color: #ffc107;
+  }
+  
+  
+
+  .icon-link {
+	color: white;
+	margin: 0 10px;
+	transition: color 0.3s;
+  }
+  
+
+
+  .icon-link:hover {
+	color: #ffc107;
+  }
+  
+ /* Custom Navbar */
+.custom-navbar {
+	background: linear-gradient(to right, #0d0d0d, #1a1a1a);
+	transition: background-color 0.4s ease;
+  }
+  
+  /* Brand Name */
+  .navbar-brand span {
+	font-weight: normal;
+  }
+  
+  /* Nav Links */
+  .nav-custom-link {
+	color: #f8f9fa;
+	font-weight: 500;
+	position: relative;
+	transition: color 0.3s;
+  }
+  
+  /* Hover underline animation */
+  .nav-custom-link::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	left: 0;
+	bottom: -5px;
+	background-color: #ffc107;
+	transition: width 0.3s;
+  }
+  
+  .nav-custom-link:hover::after {
+	width: 100%;
+  }
+  
+  .nav-custom-link:hover {
+	color: #ffc107;
+  }
+  
+  
+  .modal-content {
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-body img {
+	max-height: 400px;
+	object-fit: contain;
+  }
+  
