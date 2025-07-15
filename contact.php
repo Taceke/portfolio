@@ -17,8 +17,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'tajerkemer46031@gmail.com';     // ✅ your Gmail
-            $mail->Password = 'mqix ecys svna mojw';            // ✅ App Password
+            $mail->Username = getenv('SMTP_USERNAME'); // NOT the email itself
+            $mail->Password = getenv('SMTP_PASSWORD'); // NOT the app password itself
+            
+
+            // $mail->Username = 'tajerkemer46031@gmail.com';     // ✅ your Gmail
+            // $mail->Password = 'mqdphcaczmwvlrgx';            // ✅ App Password
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
 
