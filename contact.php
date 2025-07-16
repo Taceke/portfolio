@@ -25,10 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             $mail->Username = $_ENV['SMTP_USERNAME'];
             $mail->Password = $_ENV['SMTP_PASSWORD'];
-            
-            // $mail->Username = 'tajerkemer46031@gmail.com';     // ✅ your Gmail
-            // $mail->Password = 'mqix ecys svna mojw';            // ✅ App Password
-            $mail->SMTPSecure = 'ssl';
+                     // ✅ App Password
+            $mail->SMTPSecure = 'ssl';; 
             $mail->Port = 465;
 
             // Email Content
