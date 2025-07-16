@@ -17,12 +17,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = getenv('SMTP_USERNAME'); // NOT the email itself
-            $mail->Password = getenv('SMTP_PASSWORD'); // NOT the app password itself
+            // $mail->Username = getenv('SMTP_USERNAME'); // NOT the email itself
+            // $mail->Password = getenv('SMTP_PASSWORD'); // NOT the app password itself
             
-
+            $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+            $dotenv->load();
+            
+            $mail->Username = $_ENV['SMTP_USERNAME'];
+            $mail->Password = $_ENV['SMTP_PASSWORD'];
+            
             // $mail->Username = 'tajerkemer46031@gmail.com';     // ✅ your Gmail
-            // $mail->Password = 'mqdphcaczmwvlrgx';            // ✅ App Password
+            // $mail->Password = 'mqix ecys svna mojw';            // ✅ App Password
             $mail->SMTPSecure = 'ssl';
             $mail->Port = 465;
 
