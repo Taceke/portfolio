@@ -3,6 +3,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php'; // ✅ Only this one is needed with Composer
+require 'config.php'; // ✅ Include credentials
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars(trim($_POST["name"]));
@@ -20,11 +21,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // $mail->Username = getenv('SMTP_USERNAME'); // NOT the email itself
             // $mail->Password = getenv('SMTP_PASSWORD'); // NOT the app password itself
             
-            $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-            $dotenv->load();
+
+            $mail->Username = SMTP_USERNAME;
+            $mail->Password = SMTP_PASSWORD;
             
-            $mail->Username = $_ENV['SMTP_USERNAME'];
-            $mail->Password = $_ENV['SMTP_PASSWORD'];
                      // ✅ App Password
             $mail->SMTPSecure = 'ssl';; 
             $mail->Port = 465;
